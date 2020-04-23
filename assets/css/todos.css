@@ -67,9 +67,9 @@ input:focus {
   width: 0;
   display: inline-block;
   /* -webkit-transition: 0.2s; */
-  -webkit-transition: transform 300ms ease 0s;
-  -webkit-transition: -webkit-transform 300ms ease 0s;
-  transition: all 300ms ease 0s;
+  -webkit-transition: transform 300ms infinite;
+  -webkit-transition: -webkit-transform 300ms infinite;
+  transition: all 300ms infinite;
   opacity: 0;
 }
 
