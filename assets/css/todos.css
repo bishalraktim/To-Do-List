@@ -58,25 +58,22 @@ input:focus {
   cursor: pointer;
 }
 
-@supports (transition: initial) {
-  .trash {
-    background-color: rgb(255,69,0);
-    color: white;
-    height: 40px;
-    margin-right: 20px;
-    text-align: center;
-    width: 0;
-    display: inline-block;
-    transition: 0.2s linear;
-    opacity: 0;
-  }
+
+.trash {
+  background-color: rgb(255,69,0);
+  color: white;
+  height: 40px;
+  margin-right: 20px;
+  text-align: center;
+  width: 0;
+  display: inline-block;
+  transition: 0.2s linear;
+  opacity: 0;
 }
 
-@supports (transition: initial) {
-  li:hover .trash {
-    width: 40px;
-    opacity: 1.0;
-  }
+li:hover .trash {
+  width: 40px;
+  opacity: 1.0;
 }
 
 
