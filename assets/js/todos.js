@@ -26,6 +26,6 @@ $(".shift").click(function(){
   $("input[type='text']").fadeToggle();
 })
 
-$("li").on("mouseout", function(){
+$("ul").on("mouseleave", "li", function(){
   (".trash").hide();
 })
