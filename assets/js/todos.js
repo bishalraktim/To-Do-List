@@ -24,8 +24,11 @@ $("input[type='text']").keypress(function(e){
 
 $(".shift").click(function(){
   $("input[type='text']").fadeToggle();
-})
+});
 
-$("ul").on("mouseleave", "li", function(){
-  (".trash").css("width", 0);
-})
+$("ul").on("mouseout", "li", function(){
+  (".trash").css({
+    "width": 0,
+    "background-color": "white"
+  });
+});
