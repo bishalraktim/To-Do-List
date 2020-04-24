@@ -25,3 +25,7 @@ $("input[type='text']").keypress(function(e){
 $(".shift").click(function(){
   $("input[type='text']").fadeToggle();
 })
+
+$("li").on("mouseout", function(){
+  (".trash").hide();
+})
