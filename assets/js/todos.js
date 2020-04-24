@@ -27,5 +27,5 @@ $(".shift").click(function(){
 })
 
 $("ul").on("mouseleave", "li", function(){
-  (".trash").hide();
+  $(".trash").hide();
 })
