@@ -1,12 +1,10 @@
 $(document).ready(function(){
 
-  $("ul").on("click", "li", function(e){
-    e.preventDefault();
+  $("ul").on("click", "li", function(){
     $(this).toggleClass("completed");
   });
 
   $("ul").on("click", "span", function(event){
-    event.preventDefault();
     event.stopPropagation();
     $(this).parent().fadeOut(500, function(){
       $(this).remove();
@@ -14,7 +12,6 @@ $(document).ready(function(){
   });
 
   $("input[type='text']").keypress(function(e){
-    e.preventDefault();
     if($(this).val() === ""){
       $(this).prepend();
     }
@@ -27,8 +24,7 @@ $(document).ready(function(){
     }
   });
 
-  $(".shift").click(function(e){
-    e.preventDefault();
+  $(".shift").click(function(){
     $("input[type='text']").fadeToggle();
   });
 
