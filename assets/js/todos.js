@@ -27,5 +27,5 @@ $(".shift").click(function(){
 })
 
 $("ul").on("mouseleave", "li", function(){
-  $(this).addClass(".trash");
+  $("this").toggleClass(".trash");
 })
